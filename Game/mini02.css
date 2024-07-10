@@ -1,0 +1,136 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+h1 {
+    background-color: #001d3d;
+    color: white;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.choice {
+    height: 160px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.choice:hover {
+    background-color: #001d3d;
+}
+
+.scored-board {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 2rem;
+    margin-top: 10rem;
+}
+
+#user-score, #comp-score {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#msg {
+    font-size: 2rem;
+    background-color: #001d3d;
+    color: white;
+    display: inline;
+    padding: 0.5rem 1rem;
+}
+
+.msg-container {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .scored-board {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 5rem;
+    }
+
+    #user-score, #comp-score, #msg {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .choices {
+        gap: 1rem;
+    }
+
+    .scored-board {
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    #user-score, #comp-score, #msg {
+        font-size: 1.2rem;
+    }
+}

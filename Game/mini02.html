@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone-Paper-Scissors</title>
+    <link rel="stylesheet" href="mini02.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<h1>Stone Paper Scissors Game</h1> 
+
+<div class="choices">
+    <div class="choice" id="rock">
+        <img src="./images/rock.png" alt="Rock">
+    </div>
+    <div class="choice" id="paper">
+        <img src="./images/paper.png" alt="Paper">
+    </div>
+    <div class="choice" id="scissors">
+        <img src="./images/scissors.png" alt="Scissors">
+    </div>
+</div>
+
+<div class="scored-board">
+    <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+    </div>
+    <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+    </div>
+</div>
+
+<div class="msg-container">
+    <p id="msg">Play Your Move</p>
+</div>
+
+<script src="mini02.js"></script>
+</body>
+</html>
